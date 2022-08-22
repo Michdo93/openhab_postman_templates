@@ -1,0 +1,679 @@
+{
+	"info": {
+		"_postman_id": "18674cd8-fd75-44d4-b6d3-f18c880ea43c",
+		"name": "openHAB <your-ip>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/items",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thing-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uuid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/uuid",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"uuid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spec",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/spec",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"spec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "config-descriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/config-descriptions",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"config-descriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bindings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/bindings",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"bindings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/rules",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/auth",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/profile-types",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"profile-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/addons",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"addons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "systeminfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/systeminfo",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"systeminfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "templates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/templates",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"templates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "links",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/links",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "voice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/voice",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"voice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/things",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/audio",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/channel-types",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"channel-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/events",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ui",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/ui",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"ui"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "discovery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/discovery",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"discovery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/services",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "iconsets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/iconsets",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"iconsets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sitemaps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/sitemaps",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"sitemaps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persistence",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/persistence",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"persistence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inbox",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/inbox",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"inbox"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "module-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/module-types",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"module-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "habpanel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://<your-ip>:8080/rest/habpanel",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"5",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"habpanel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<password>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
