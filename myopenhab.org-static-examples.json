@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "41e38171-2cd2-430b-8cfb-2682702ef077",
+		"_postman_id": "dac92232-5672-4090-a565-930dc84a52f4",
 		"name": "myopenhab.org Static Examples",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,7 +17,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -44,7 +43,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -71,7 +69,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -94,7 +91,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -121,7 +117,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -148,7 +143,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -171,7 +165,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -198,7 +191,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -225,7 +217,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -248,7 +239,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -275,7 +265,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -302,7 +291,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -325,7 +313,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -352,7 +339,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -379,7 +365,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -402,7 +387,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -429,7 +413,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -456,7 +439,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -479,7 +461,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -506,7 +487,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -533,7 +513,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -556,7 +535,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -583,7 +561,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -610,7 +587,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -633,7 +609,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -660,7 +635,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -687,7 +661,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -710,7 +683,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -737,7 +709,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -764,7 +735,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -787,7 +757,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -814,7 +783,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
@@ -841,7 +809,6 @@
 						"myopenhab",
 						"org"
 					],
-					"port": "8080",
 					"path": [
 						"rest",
 						"items",
