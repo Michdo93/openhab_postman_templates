@@ -1,6 +1,10 @@
 # openhab_postman_templates
 Postman Collections Templates for openHAB and openHAB Cloud for accessing the REST API.
 
+Postman is an API platform for developers to design, build, test and iterate their APIs. As of April 2022, Postman reports having more than 20 million registered users and 75,000 open APIs, which it says constitutes the world's largest public API hub. The company is headquartered in San Francisco and maintains an office in Bangalore, where it was founded.
+
+Postman can be used with Mac, Windows, & Linux. You can download it [here](https://www.postman.com/downloads/).
+
 ## Usage
 
 ### Local openHAB Instance
