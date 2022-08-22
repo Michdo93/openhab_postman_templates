@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "e36f3727-ebc1-4a98-a371-722bbe2427ab",
+		"name": "openHAB myopenhab.org",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/items",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thing-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/thing-types",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"thing-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uuid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/uuid",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"uuid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spec",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/spec",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"spec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "config-descriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/config-descriptions",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"config-descriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bindings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/bindings",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"bindings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/rules",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/auth",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/profile-types",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"profile-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/addons",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"addons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "systeminfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/systeminfo",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"systeminfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "templates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/templates",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"templates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "links",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/links",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "voice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/voice",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"voice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/things",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/audio",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/channel-types",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"channel-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/events",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ui",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/ui",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"ui"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "discovery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/discovery",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"discovery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/services",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "iconsets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/iconsets",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"iconsets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sitemaps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/sitemaps",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"sitemaps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persistence",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/persistence",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"persistence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inbox",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/inbox",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"inbox"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "module-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/module-types",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"module-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "habpanel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/habpanel",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"habpanel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<e-mail>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<password>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
