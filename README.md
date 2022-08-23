@@ -32,3 +32,15 @@ If you want to connect to openHAB remotely and use [myopenhab.org](https://myope
 It is recommended to use a text editor with a replace all function.
 
 For testing you can install the [openhab_static_examples](https://github.com/Michdo93/openhab_static_examples). For this you can import `myopenhab.org-static-examples.json`. You have to make the same changes as described above.
+
+## Notes on HTTP request methods
+
+As you can see with `openhab-static-examples-http.json`, `openhab-static-examples-https.json` or `myopenhab.org-static-examples.json` by testing the [openhab_static_examples](https://github.com/Michdo93/openhab_static_examples), you have to use `GET` to get the current `state` of an item, `PUT` for `postUpdate` an item and `POST` for `sendCommand` to an item.
+
+| HTTP request method        | Description  | URL  |
+| :-------------: |:-------------:| :-----:|
+| `GET`  | Retrieve the state of an item | `https://<base_url>/rest/items/{itemName}/state` |
+| `PUT`  | The state of an item is updated. | `https://<base_url>/rest/items/{itemName}/state` |
+| `POST` | A command is sent to an item via a channel. | `https://<base_url>/rest/items/{itemName}` |
+
+The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`.
