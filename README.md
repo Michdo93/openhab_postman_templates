@@ -33,14 +33,33 @@ It is recommended to use a text editor with a replace all function.
 
 For testing you can install the [openhab_static_examples](https://github.com/Michdo93/openhab_static_examples). For this you can import `myopenhab.org-static-examples.json`. You have to make the same changes as described above.
 
-## Notes on HTTP request methods
+## Additional notes
+
+### Notes on HTTP request methods
 
 As you can see with `openhab-static-examples-http.json`, `openhab-static-examples-https.json` or `myopenhab.org-static-examples.json` by testing the [openhab_static_examples](https://github.com/Michdo93/openhab_static_examples), you have to use `GET` to get the current `state` of an item, `PUT` for `postUpdate` an item and `POST` for `sendCommand` to an item.
 
-| HTTP request method        | Description  | URL  |
-| :-------------: |:-------------:| :-----:|
-| `GET`  | Retrieve the state of an item | `https://<base_url>/rest/items/{itemName}/state` |
-| `PUT`  | The state of an item is updated. | `https://<base_url>/rest/items/{itemName}/state` |
-| `POST` | A command is sent to an item via a channel. | `https://<base_url>/rest/items/{itemName}` |
+| HTTP request method        | Description  | Method | URL  |
+| :-------------: |:-------------:| :-----:| :-----:|
+| `GET`  | Retrieve the state of an item. | `n/a` | `https://<base_url>/rest/items/{itemName}/state` |
+| `PUT`  | The state of an item is updated. | `postUpdate` | `https://<base_url>/rest/items/{itemName}/state` |
+| `POST` | A command is sent to an item via a channel. | `sendCommand` | `https://<base_url>/rest/items/{itemName}` |
 
-The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`.
+The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`. Of course if you are using `http` on your local instance you have to replace `https` with `http`.
+
+### Notes on Event Bus Item Events
+
+Of course you can try also to check the event of your item. Read more about it [here](https://www.openhab.org/docs/developer/utils/events.html#item-events).
+ 
+| HTTP request method |  Event | 	Description | 	URL | 
+| :-------------: |:-------------:| :-----:| :-----:|
+| `GET`  | ItemAddedEvent |	An item has been added to the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/added
+| `GET`  | ItemRemovedEvent |	An item has been removed from the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/removed
+| `GET`  | ItemUpdatedEvent |	An item has been updated in the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/updated
+| `GET`  | ItemCommandEvent |	A command is sent to an item via a channel. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/command
+| `GET`  | ItemStateEvent |	The state of an item is updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/state
+| `GET`  | ItemStatePredictedEvent |	The state of an item predicted to be updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statepredicted
+| `GET`  | ItemStateChangedEvent |	The state of an item has changed. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statechanged
+| `GET`  | GroupItemStateChangedEvent |	The state of a group item has changed through a member. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/{memberName}/statechanged
+
+The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`. Of course if you are using `http` on your local instance you have to replace `https` with `http`.
