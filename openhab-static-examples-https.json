@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "41e38171-2cd2-430b-8cfb-2682702ef077",
+		"_postman_id": "dac92232-5672-4090-a565-930dc84a52f4",
 		"name": "openHAB Static Examples",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -86,6 +86,64 @@
 						"items",
 						"testColor",
 						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testColor state \"100, 100, 100\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "100, 100, 100"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testColor",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testColor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testColor state \"127, 61, 99\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "127, 61, 99"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testColor",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testColor"
 					]
 				}
 			},
@@ -264,6 +322,64 @@
 			"response": []
 		},
 		{
+			"name": "Post testDateTime state 2018-11-27T10:22:10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "2018-11-27T10:22:10"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testDateTime",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testDateTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testDateTime state 2022-08-22T21:48:10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "2022-08-22T21:48:10"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testDateTime",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testDateTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get testDimmer state",
 			"request": {
 				"method": "GET",
@@ -344,6 +460,64 @@
 						"items",
 						"testDimmer",
 						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testDimmer state 70",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "70"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testDimmer",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testDimmer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testDimmer state 30",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "30"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testDimmer",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testDimmer"
 					]
 				}
 			},
@@ -522,6 +696,35 @@
 			"response": []
 		},
 		{
+			"name": "Post testLocation state HFU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "48.051437316054006, 8.207755911376244, 857.0"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testLocation",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testLocation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get testNumber state",
 			"request": {
 				"method": "GET",
@@ -602,6 +805,64 @@
 						"items",
 						"testNumber",
 						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testNumber state 42",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "42.0"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testNumber",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testNumber state 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testNumber",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testNumber"
 					]
 				}
 			},
@@ -694,6 +955,64 @@
 			"response": []
 		},
 		{
+			"name": "Post testPlayer state PAUSE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "PAUSE"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testPlayer",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testPlayer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testPlayer state PLAY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "PLAY"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testPlayer",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testPlayer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get testRollershutter state",
 			"request": {
 				"method": "GET",
@@ -774,6 +1093,64 @@
 						"items",
 						"testRollershutter",
 						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testRollershutter state 0",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "0"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testRollershutter",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testRollershutter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testRollershutter state 100",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "100"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testRollershutter",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testRollershutter"
 					]
 				}
 			},
@@ -866,6 +1243,64 @@
 			"response": []
 		},
 		{
+			"name": "Post testString state Hello World",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Hello World"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testString",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testString"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testString state Lorem ipsum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Lorem ipsum"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testString",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testString"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get testSwitch state",
 			"request": {
 				"method": "GET",
@@ -946,6 +1381,64 @@
 						"items",
 						"testSwitch",
 						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testSwitch state ON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "ON"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testSwitch",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testSwitch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post testSwitch state OFF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "OFF"
+				},
+				"url": {
+					"raw": "https://<your-ip>.:8080/rest/items/testSwitch",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY",
+						""
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testSwitch"
 					]
 				}
 			},
