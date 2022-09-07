@@ -53,13 +53,45 @@ Of course you can try also to check the event of your item. Read more about it [
  
 | HTTP request method |  Event | 	Description | 	URL | 
 | :-------------: |:-------------:| :-----:| :-----:|
-| `GET`  | ItemAddedEvent |	An item has been added to the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/added
-| `GET`  | ItemRemovedEvent |	An item has been removed from the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/removed
-| `GET`  | ItemUpdatedEvent |	An item has been updated in the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/updated
-| `GET`  | ItemCommandEvent |	A command is sent to an item via a channel. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/command
-| `GET`  | ItemStateEvent |	The state of an item is updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/state
-| `GET`  | ItemStatePredictedEvent |	The state of an item predicted to be updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statepredicted
-| `GET`  | ItemStateChangedEvent |	The state of an item has changed. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statechanged
-| `GET`  | GroupItemStateChangedEvent |	The state of a group item has changed through a member. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/{memberName}/statechanged
+| `GET`  | ItemAddedEvent |	An item has been added to the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/added |
+| `GET`  | ItemRemovedEvent |	An item has been removed from the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/removed |
+| `GET`  | ItemUpdatedEvent |	An item has been updated in the item registry. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/updated |
+| `GET`  | ItemCommandEvent |	A command is sent to an item via a channel. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/command |
+| `GET`  | ItemStateEvent |	The state of an item is updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/state |
+| `GET`  | ItemStatePredictedEvent |	The state of an item predicted to be updated. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statepredicted |
+| `GET`  | ItemStateChangedEvent |	The state of an item has changed. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/statechanged |
+| `GET`  | GroupItemStateChangedEvent |	The state of a group item has changed through a member. |	https://<base_url>/rest/events?topics=openhab/items/{itemName}/{memberName}/statechanged |
 
 The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`. Of course if you are using `http` on your local instance you have to replace `https` with `http`.
+
+### Notes on Creating a new Item via the REST API
+
+You can create a new Item like described in the following:
+
+| HTTP request method |  Event | 	Description | 	URL | 
+| :-------------: |:-------------:| :-----:| :-----:|
+| `PUT`  | Create a new item |	Creating a new item and add it to the item registry. |	https://<base_url>/rest/items/{itemName} |
+
+In the `body` you have to use `JSON`. An equvialent command with `curl` looks like in the following:
+
+```
+curl -0 -v -X PUT http://<base_url>/rest/items/{itemName} -H "Content-Type: text/plain" -H 'Accept: text/plain' --data-binary @- << EOF
+{
+    "type": "String"
+    "name": "myTestString",
+    "label": "my test string"
+}
+EOF
+```
+
+In `Postman` you have to make sure to selecht `raw` and `JSON` inside the `Body` tag. There you can add:
+
+```
+{"type": "String", "name": "myTestString", "label": "my test string"}
+```
+
+The value will be `NULL`. If you want to add a value you can do something like in the following:
+
+```
+{"type": "String", "name": "myTestString", "label": "my test string", "value": "Hello World"}
+```
