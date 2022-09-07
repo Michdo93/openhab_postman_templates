@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "6e7ae7f4-fb30-4a12-814b-1c046fa09197",
+		"name": "openHAB Items Event Bus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\": \"String\", \"name\": \"testItem\", \"label\": \"tester\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/items/testItem",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"items",
+						"testItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemAddedEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/added",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/added"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemRemovedEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/removed",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/removed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemUpdatedEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/updated",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/updated"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemCommandEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/command",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/command"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemStateEvent",
+			"protocolProfileBehavior": {
+				"maxRedirects": 1000000000
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Keep-Alive",
+						"value": "timeout=10, max=1000000000000000",
+						"type": "default"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/state",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/state"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemStatePredictedEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/statepredicted",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/statepredicted"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemStateChangedEvent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://<your-ip>:8080/rest/events?topics=openhab/items/testItem/statechanged",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"XXX",
+						"YYY"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"events"
+					],
+					"query": [
+						{
+							"key": "topics",
+							"value": "openhab/items/testItem/statechanged"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "<password>",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "<username>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
