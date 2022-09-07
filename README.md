@@ -64,6 +64,19 @@ Of course you can try also to check the event of your item. Read more about it [
 
 The `<base_url>` could be the ip address plus port of your local openHAB instance (`<ip_address>:<port>`) or `myopenhab.org`. Of course if you are using `http` on your local instance you have to replace `https` with `http`.
 
+As an alternative to Postman, you can then use curl for this:
+
+|  Event | 	Description | 	URL | 
+|:-------------:| :-----:| :-----:|
+| ItemAddedEvent |	An item has been added to the item registry. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/added" |
+| ItemRemovedEvent |	An item has been removed from the item registry. | curl	"https://<base_url>/rest/events?topics=openhab/items/{itemName}/removed" |
+| ItemUpdatedEvent |	An item has been updated in the item registry. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/updated" |
+| ItemCommandEvent |	A command is sent to an item via a channel. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/command" |
+| ItemStateEvent |	The state of an item is updated. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/state" |
+| ItemStatePredictedEvent |	The state of an item predicted to be updated. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/statepredicted" |
+| ItemStateChangedEvent |	The state of an item has changed. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/statechanged" |
+| GroupItemStateChangedEvent |	The state of a group item has changed through a member. |	curl "https://<base_url>/rest/events?topics=openhab/items/{itemName}/{memberName}/statechanged" |
+
 ### Notes on Creating a new Item via the REST API
 
 You can create a new Item like described in the following:
