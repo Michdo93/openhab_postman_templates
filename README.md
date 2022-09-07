@@ -49,7 +49,7 @@ The `<base_url>` could be the ip address plus port of your local openHAB instanc
 
 ### Notes on Event Bus Item Events
 
-Of course you can try also to check the event of your item. Read more about it [here](https://www.openhab.org/docs/developer/utils/events.html#item-events).
+Of course you can try also to check the event of your item. Read more about it [here](https://www.openhab.org/docs/developer/utils/events.html#item-events). Sadly it will fail because [SSE](https://en.wikipedia.org/wiki/Server-sent_events) is not supported.
  
 | HTTP request method |  Event | 	Description | 	URL | 
 | :-------------: |:-------------:| :-----:| :-----:|
