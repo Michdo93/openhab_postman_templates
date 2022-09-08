@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "c4100b8e-1aa3-4952-9377-b2925bdedc80",
+		"name": "myopenhab.org CRUD Items",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\": \"String\", \"name\": \"testItem\", \"label\": \"my test item\", \"value\": \"Hello World\", \"groupNames\": [\"myGroup\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myopenhab.org/rest/items/testItem",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items",
+						"testItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/items/testItem/state",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items",
+						"testItem",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Lorem ipsum",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myopenhab.org/rest/items/testItem/state",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items",
+						"testItem",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myopenhab.org/rest/items/testItem",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items",
+						"testItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://myopenhab.org/rest/items/testItem",
+					"protocol": "https",
+					"host": [
+						"myopenhab",
+						"org"
+					],
+					"path": [
+						"rest",
+						"items",
+						"testItem"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "<password>",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "<e-mail>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
