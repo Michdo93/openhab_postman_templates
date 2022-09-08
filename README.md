@@ -108,3 +108,30 @@ The value will be `NULL`. If you want to add a value you can do something like i
 ```
 {"type": "String", "name": "myTestString", "label": "my test string", "value": "Hello World"}
 ```
+
+If you want to add your item to a `Group` you have to do something like in the following:
+
+```
+{"type": "String", "name": "myTestString", "label": "my test string", "value": "Hello World", "groupNames": ["yourGroup"]}
+```
+
+If the `Group` to which you want to add the `Item` does not exist, you must first create this group:
+
+```
+{"type": "Group", "name": "yourGroup", "label": "my new own group"}
+```
+
+If you want this `Group` to be subordinate to another `Group`, you can do the following:
+
+
+```
+{"type": "Group", "name": "yourGroup", "label": "my new own group", "groupNames": ["parentGroup"]}
+```
+
+If this `Group` does not exist either, you can create this `Group` as described above.
+
+You can also add an `Item` to multiple `Groups`. To do this, you need to do the following:
+
+```
+{"type": "String", "name": "myTestString", "label": "my test string", "value": "Hello World", "groupNames": ["firstGroup","secondGroup","thirdGroup"]}
+```
