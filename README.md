@@ -83,7 +83,7 @@ You can create a new Item like described in the following:
 
 | HTTP request method |  Event | 	Description | 	URL | 
 | :-------------: |:-------------:| :-----:| :-----:|
-| `PUT`  | Create a new item |	Creating a new item and add it to the item registry. |	https://<base_url>/rest/items/{itemName} |
+| `PUT`  | Create a new item |	Creating a new item and add it to the item registry. |	`https://<base_url>/rest/items/{itemName}` |
 
 In the `body` you have to use `JSON`. An equvialent command with `curl` looks like in the following:
 
@@ -143,7 +143,7 @@ You can delete an Item like described in the following:
 
 | HTTP request method |  Event | 	Description | 	URL | 
 | :-------------: |:-------------:| :-----:| :-----:|
-| `DELETE`  | Delete an item |	Deleting an item and remove it from the item registry. |	https://<base_url>/rest/items/{itemName} |
+| `DELETE`  | Delete an item |	Deleting an item and remove it from the item registry. |	`https://<base_url>/rest/items/{itemName}` |
 
 ### Notes on CRUD methods of an Item
 
@@ -151,8 +151,8 @@ You can delete an Item like described in the following:
 
 | CRUD method | HTTP request method        | Description  | Method | URL  |
 | :-----:| :-------------: |:-------------:| :-----:| :-----:|
-| `Create`  | `PUT`  |	Creating a new item and add it to the item registry. |	`n/a` | https://<base_url>/rest/items/{itemName} |
+| `Create`  | `PUT`  |	Creating a new item and add it to the item registry. |	`n/a` | `https://<base_url>/rest/items/{itemName}` |
 | `Read`  | `GET`  | Retrieve the state of an item. | `n/a` | `https://<base_url>/rest/items/{itemName}/state` |
 | `Update`  | `PUT`  | The state of an item is updated. | `postUpdate` | `https://<base_url>/rest/items/{itemName}/state` |
 | `Update`  | `POST` | A command is sent to an item via a channel. | `sendCommand` | `https://<base_url>/rest/items/{itemName}` |
-| `Delete` | `DELETE` |	Deleting an item and remove it from the item registry. |	`n/a` | https://<base_url>/rest/items/{itemName} |
+| `Delete` | `DELETE` |	Deleting an item and remove it from the item registry. |	`n/a` | `https://<base_url>/rest/items/{itemName}` |
