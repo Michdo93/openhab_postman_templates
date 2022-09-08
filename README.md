@@ -144,3 +144,15 @@ You can delete an Item like described in the following:
 | HTTP request method |  Event | 	Description | 	URL | 
 | :-------------: |:-------------:| :-----:| :-----:|
 | `DELETE`  | Delete an item |	Deleting an item and remove it from the item registry. |	https://<base_url>/rest/items/{itemName} |
+
+### Notes on CRUD methods of an Item
+
+`CRUD` stands for `Create, Read, Update and Delete`. In `openHAB` you can update an `Item` by using `postUpdate` or `sendCommand`. If you are working on your local instance you can run all `CRUD` methods. If you are using the openHAB Cloud you are limited to use `Read` and `Update`. By using the openHAB Cloud `Create` and `Delete` are not allowed.
+
+| CRUD method | HTTP request method        | Description  | Method | URL  |
+| :-----:| :-------------: |:-------------:| :-----:| :-----:|
+| `Create`  | `PUT`  |	Creating a new item and add it to the item registry. |	`n/a` | https://<base_url>/rest/items/{itemName} |
+| `Read`  | `GET`  | Retrieve the state of an item. | `n/a` | `https://<base_url>/rest/items/{itemName}/state` |
+| `Update`  | `PUT`  | The state of an item is updated. | `postUpdate` | `https://<base_url>/rest/items/{itemName}/state` |
+| `Update`  | `POST` | A command is sent to an item via a channel. | `sendCommand` | `https://<base_url>/rest/items/{itemName}` |
+| `Delete` | `DELETE` |	Deleting an item and remove it from the item registry. |	`n/a` | https://<base_url>/rest/items/{itemName} |
