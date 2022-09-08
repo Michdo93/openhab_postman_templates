@@ -135,3 +135,12 @@ You can also add an `Item` to multiple `Groups`. To do this, you need to do the 
 ```
 {"type": "String", "name": "myTestString", "label": "my test string", "value": "Hello World", "groupNames": ["firstGroup","secondGroup","thirdGroup"]}
 ```
+
+
+### Notes on Deleting an Item via the REST API
+
+You can delete an Item like described in the following:
+
+| HTTP request method |  Event | 	Description | 	URL | 
+| :-------------: |:-------------:| :-----:| :-----:|
+| `DELETE`  | Delete an item |	Deleting an item and remove it from the item registry. |	https://<base_url>/rest/items/{itemName} |
